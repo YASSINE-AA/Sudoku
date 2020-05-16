@@ -12,11 +12,11 @@ from main import *
 # User selected     
 user_selected_x = 38
 user_selected_y = 50
-
+ 
 class Main:
     class App:
         def __init__(self):
-            pygame.mixer.init(60000, -16, 2, 512)
+            pygame.mixer.init(50000, -16, 2, 512)
             pygame.init()
             self.window = pygame.display.set_mode((width, height))
             pygame.display.set_caption(name)
@@ -175,10 +175,6 @@ class Main:
                         self.clicked = True
                         self.sound_enabled = True
                         sounds(button_press)
-                    if event.key == pygame.K_n:
-                        self.sound_enabled = True
-                        sounds(button_press)
-                        self.reset_new = True
                     if event.key == pygame.K_q:
                         self.sound_enabled = True
                         sounds(button_press)
@@ -249,10 +245,7 @@ class Main:
                     pygame.draw.line(self.window, black, (38, 150 + 56 *i), (504 + 38, 150 + 56 * i), 1)
 
             pygame.draw.rect(self.window, black, grid, 5)
-            
-        # ==================== Sounds ====================================
-        
-                    
+
         # ==================== Add Numbers ===============================
 
             # Position Finder

@@ -5,7 +5,7 @@ height = 690
 name = "Sudoku!"
 
 # Sounds
-button_press = "sounds/button_press.mp3"
+button_press = "sounds/button_press.wav"
 
 # colors
 black = (0, 0, 0)
