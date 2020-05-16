@@ -277,7 +277,6 @@ class Main:
                 remover(col, row)
                 self.clicked_r = False
             
-            #===================== Solution Checker ==========================
 
         def update(self):
             pygame.display.update()
